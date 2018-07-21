@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blackjack</title>
+	<title>BlackJack</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
-	<div></div>
+	<div id="page">
+	    <div class="text-block">
+	        <p> Bet:<span id= "bet_value"></span></p>
+	        <p> Player Balance Amount:<span id="playerBank"></span></p>
+	        <p> Dealer Balance Amount:<span id="dealerBank"></span></p>
+	        <p> Player Cards Total:<span id="playerHand"></span></p>
+	        <p> Dealer Cards Total:<span id="dealHand"></span></p>
+	        <p><span id="message"></span></p>
+	    </div>
+	</div>
 
-	<div></div>
+	<div id="actions">
+	    <button id="startGame" class="btn"><span>Start Game</span></button>
+	    <button id="hit" class="btn"><span>Hit</span></button>
+	    <button id="stand" class="btn"><span>Stand</span></button>
+	    <button id="bet" class="btn"><span>Bet</span></button>
+	    <button id="reset" class="btn"><span>Reset</span></button>
+	</div>
 
-	<div></div>
+	<!-- <footer>
+		© Copyright 2018 EJM
+	</footer> -->
 
-	<div></div>
-
-	<div></div>
-
-	<script type="text/javascript">
-		
-	</script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
